@@ -7,7 +7,7 @@ class Quiz extends Component{
         return <div>
                     Quiz
                     <div className="QuizQuestion">
-                        quizData['quiz_questions'].instruction_text
+                        {quizData.quiz_questions[0].instruction_text}
                     </div>
 
                 </div>
