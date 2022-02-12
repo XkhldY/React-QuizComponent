@@ -3,21 +3,22 @@ import React from "react";
 
 class QuizQuestion extends Component{
     render(){
-        return 
+        return (
                 <main>
                     <section>
-                        <p>// instruction text goes here
-                            this.props.instruction_text
+                        <p>
+                            {this.props.quiz_question.instruction_text}
                         </p>
                         </section>
                     <section className="buttons">
                         <ul>
                             //quiz question button logic goes here
-                            this.props.quiz_question.answer_options[0]
+                            <li>{this.props.quiz_question.answer_options[0]}</li>
+                            
                         </ul>
                     </section>
                 </main>
-    }
+        )}
         
 }
 
